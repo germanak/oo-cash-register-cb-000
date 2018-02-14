@@ -19,6 +19,7 @@ class CashRegister
       end
     else
       self.total += price
+      self.last_transaction += price
       @items << item
     end
   end
